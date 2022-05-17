@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    width: 300px;
+    height: 250px;
+    background-color: #1B1626;
+}
+
+.card{
+    display: flex;
+    padding: 2px;
+    font-size: 14pt;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: space-between;
+    color: #F29544;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.checkbox{
+    transform : scale(1.5)
+}

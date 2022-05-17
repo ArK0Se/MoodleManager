@@ -1,0 +1,29 @@
+{
+    "name": "Moodle manager",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "Extension for managing Moodle courses from student side",
+    "icons": {
+        "16": "icons/moodle.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "your_school_domain.com/*"
+            ],
+            "js": [
+                "script/app.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "script/background.js"
+    }
+}
